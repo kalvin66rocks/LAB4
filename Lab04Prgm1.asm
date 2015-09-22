@@ -5,7 +5,7 @@ StackBot:
 var0:	    .word 
 var1:	    .word 
 
-strPrompt:  .asciiz "please enter a number " 
+strPrompt:  .asciiz "Please enter a number " 
 
 .text
 main:
@@ -55,5 +55,6 @@ next:
 	srl $s0,$s0,1	#shift multiplier right
 	bne $s0,$0,loop  #go back into our loop	
 done: 
+	
 	jr $ra
 
